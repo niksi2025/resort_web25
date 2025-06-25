@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rezervacija - Hacienda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Početna</a>
+    <a href="rooms.html">Sobe</a>
+    <a href="booking.html">Rezervacija</a>
+    <a href="contact.html">Kontakt</a>
+  </nav>
+
+  <section class="booking">
+    <h2>Proveri dostupnost</h2>
+    <form action="mailto:TVOJEMAIL@domen.com" method="POST" enctype="text/plain">
+      <label for="checkin">Datum dolaska:</label>
+      <input type="date" id="checkin" name="Datum dolaska" required>
+
+      <label for="checkout">Datum odlaska:</label>
+      <input type="date" id="checkout" name="Datum odlaska" required>
+
+      <label for="guests">Broj osoba:</label>
+      <input type="number" id="guests" name="Broj osoba" min="1" required>
+
+      <label for="message">Poruka:</label>
+      <textarea id="message" name="Poruka" placeholder="Dodatne informacije..."></textarea>
+
+      <button type="submit">Pošalji upit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hacienda Resort. Sva prava zadržana.</p>
+  </footer>
+</body>
+</html>
